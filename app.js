@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB");
+mongoose.connect("mongodb+srv://soourabh:Sourabh@cluster0.gywogyh.mongodb.net/?retryWrites=true&w=majority");
 
 const items = ["Buy Food", "Cook Food", "Eat Food"];
 const workItems = [];
